@@ -11,7 +11,7 @@ jobs:
       # Replace this with a real test runner invocation
       - run:
           name: Run tests
-          command: echo 'No testing running yet.'
+          # command: echo 'No testing running yet.'
   build:
     docker:
       - image: cimg/base:stable
