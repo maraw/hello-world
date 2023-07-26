@@ -22,6 +22,7 @@ jobs:
       - ruby/install:
           version: '2.7'
       - run: ruby -v
+      - run: rbenv
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
