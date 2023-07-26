@@ -27,7 +27,9 @@ jobs:
       - run: echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
       - run: echo 'eval "$(rbenv init -)"' >> ~/.bashrc
       - run: source ~/.bashrc
-      - run: rbenv versions
+      - run: cat ~/.bashrc
+      - run: type rbenv 
+      - run: rbenv --help
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
