@@ -19,6 +19,8 @@ jobs:
           command: "echo Hello, World!"
       - run: uname -a
       - run: date
+      - run: pwd
+      - run: ls -la
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
