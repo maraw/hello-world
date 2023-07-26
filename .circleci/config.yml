@@ -19,8 +19,11 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+      - run: ruby -v    
       - ruby/install:
           version: '2.7.8'
+      - ruby/uninstall:
+          version: '2.7.2'
       - run: ruby -v    
       - run: uname -a
       - run: curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
