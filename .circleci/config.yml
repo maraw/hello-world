@@ -19,9 +19,13 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+      - run: ruby -v    
+      - ruby/install:
+          version: '2.7.2'
+      - run: ruby -v    
       - ruby/install:
           version: '2.7.8'
-      - run: rvm use ruby-2.7.8
+      - run: rvm use ruby-2.7.2
       - run: ruby -v    
       - run:
           name: Which bundler?
@@ -34,7 +38,7 @@ jobs:
       - run: echo 'eval "$(rbenv init -)"' >> ~/.bashrc
       - run: source ~/.bashrc
       - run: cat ~/.bashrc
-      - run: rbenv --help
+      # - run: rbenv --help
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
