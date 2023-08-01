@@ -29,6 +29,7 @@ jobs:
       - run: ruby -v    
       - run: rvm use ruby-2.7.2
       - run: ruby -v    
+      - run: rvm list
       - run:
           name: Which bundler?
           command: bundle -v
