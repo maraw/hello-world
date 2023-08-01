@@ -27,6 +27,8 @@ jobs:
           version: '2.7.8'
       - run: rvm use ruby-2.7.2
       - run: ruby -v    
+      - run: rvm use ruby-2.7.8
+      - run: ruby -v    
       - run:
           name: Which bundler?
           command: bundle -v
