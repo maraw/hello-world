@@ -22,6 +22,7 @@ jobs:
       - run: whoami
       - run: sudo date     
       - run: sudo -s 
+      - run: whoami
       # # - run: ruby -v    
       # - ruby/install:
       #     version: '2.7.2'
