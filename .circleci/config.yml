@@ -16,6 +16,7 @@ jobs:
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
+      - run: echo $HOME
       - checkout
       - run:
           name: "Say hello"
