@@ -19,29 +19,31 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+      - run: whoami
+      - run: sudo date     
+      # # - run: ruby -v    
+      # - ruby/install:
+      #     version: '2.7.2'
       # - run: ruby -v    
-      - ruby/install:
-          version: '2.7.2'
-      - run: ruby -v    
-      - ruby/install:
-          version: '2.7.8'
-      - run: rvm use ruby-2.7.8
-      - run: ruby -v    
-      - run: rvm use ruby-2.7.2
-      - run: ruby -v    
-      - run: rvm list
-      - run:
-          name: Which bundler?
-          command: bundle -v
+      # - ruby/install:
+      #     version: '2.7.8'
+      # - run: rvm use ruby-2.7.8
+      # - run: ruby -v    
+      # - run: rvm use ruby-2.7.2
+      # - run: ruby -v    
+      # - run: rvm list
+      # - run:
+      #     name: Which bundler?
+      #     command: bundle -v
           
-      # - ruby/bundle-install
+      # # - ruby/bundle-install
 
-      - run: curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
-      - run: echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-      - run: echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-      - run: source ~/.bashrc
-      - run: cat ~/.bashrc
-      # - run: rbenv --help
+      # - run: curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
+      # - run: echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+      # - run: echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+      # - run: source ~/.bashrc
+      # - run: cat ~/.bashrc
+      # # - run: rbenv --help
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
