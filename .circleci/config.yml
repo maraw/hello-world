@@ -24,7 +24,7 @@ jobs:
           command: "echo Hello, World!"
       - run: whoami
       - run: sudo date     
-      - run: sudo -s 
+      # - run: sudo -s 
       - run: whoami
       # # - run: ruby -v    
       # - ruby/install:
