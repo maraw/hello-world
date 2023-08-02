@@ -17,6 +17,7 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - run: echo $HOME
+      - run: echo $PATH
       - checkout
       - run:
           name: "Say hello"
