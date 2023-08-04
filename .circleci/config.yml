@@ -26,6 +26,8 @@ jobs:
       - run: sudo date     
       # - run: sudo -s 
       - run: whoami
+      - run: echo << pipeline.number >>
+
       # # - run: ruby -v    
       # - ruby/install:
       #     version: '2.7.2'
