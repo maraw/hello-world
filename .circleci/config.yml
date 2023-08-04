@@ -27,7 +27,8 @@ jobs:
       # - run: sudo -s 
       - run: whoami
       - run: echo << pipeline.number >>
-
+      - run: echo << pipeline.git.branch >>
+      - run: echo << pipeline.trigger_source >>
       # # - run: ruby -v    
       # - ruby/install:
       #     version: '2.7.2'
